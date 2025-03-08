@@ -63,7 +63,7 @@ public void displayLosingMessage()
 {
   String [] los = {"Y","O","U","I","S","B","A","D"};
    if(!isWon()){
-      for(int i = 0; 0 < los.length; i++){
+      for(int i = 0; i < los.length; i++){
        if(i < NUM_COLS){
         buttons[0][i+1].setLabel(los[i]);
         buttons[0][i+1].clicked = true;
@@ -133,10 +133,9 @@ public class MSButton
            flagged = false;
            clicked = false;
          }
-         if(!flagged)
-         {
-           flagged = true;
-         }
+         else{
+flagged = true;
+}
         }
         else if(mines.contains(this))
         {
