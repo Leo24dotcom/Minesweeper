@@ -60,7 +60,7 @@ public boolean isWon()
 }
 public void displayLosingMessage()
 {
-  String [] los = {"Y","O","U","I","S","B","A","D"};
+  String [] los = {"G","A","M","E","O","V","E","R"};
    if(!isWon()){
       for(int i = 0; i < los.length; i++){
        if(i < NUM_COLS){
@@ -142,7 +142,7 @@ flagged = true;
         }
         else if(countMines(myRow,myCol) > 0)
         {
-         buttons[myRow][myCol].myLabel = String.valueOf((countMines(myRow,myCol)));
+         buttons[myRow][myCol].myLabel = countMines(myRow, myCol)+"";
         }
         else
         {
